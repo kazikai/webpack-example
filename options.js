@@ -4,5 +4,3 @@ module.exports = {
     data: data,
     data2: data2
 };
-
-
