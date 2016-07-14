@@ -4,5 +4,5 @@ console.log( 'data', dataList.data );
 console.log( 'data2', dataList.data2 );
 
 
-require( "../css/default.css" )
+require( "./default.css" )
 

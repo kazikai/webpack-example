@@ -20,12 +20,11 @@ module.exports = {
             loader: 'handlebars'
         }, {
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+            loader: ExtractTextPlugin.extract( "style-loader", "css-loader" )
         }, {
             test: /\.png$/,
             loader: "file-loader"
         }
-
     ],
     plugins: [
         //new webpack.optimize.CommonsChunkPlugin({
@@ -59,6 +58,10 @@ module.exports = {
             inject: "body",
             filename: "manage.html"
         }),
-        new ExtractTextPlugin("resources/css/[name].css")
-    ]
+        new ExtractTextPlugin("resources/cssd/[name].css")
+    ]/*,
+    resolve: {
+        extensions: ['.css'],
+        root: [path.join(__dirname, './resources/css')]
+    }*/
 };
